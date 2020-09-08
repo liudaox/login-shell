@@ -36,16 +36,14 @@ Filesystem=$(df -h | awk '/^\/dev/{print $6}')
 #Interfaces
 INTERFACES=$(ip -4 ad | grep 'state ' | awk -F":" '!/^[0-9]*: ?lo/ {print $2}')
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo -e "
- ___    ___ ___  ________   ________  ________  ________  ________     
-|\  \  /  /|\  \|\   ___  \|\   ____\|\   ___ \|\   __  \|\   __  \    
-\ \  \/  / | \  \ \  \\ \  \ \  \___|\ \  \_|\ \ \  \|\  \ \  \|\  \   
- \ \    / / \ \  \ \  \\ \  \ \  \  __\ \  \ \\ \ \   __  \ \  \\\  \  
-  /     \/   \ \  \ \  \\ \  \ \  \|\  \ \  \_\\ \ \  \ \  \ \  \\\  \ 
- /  /\   \    \ \__\ \__\\ \__\ \_______\ \_______\ \__\ \__\ \_______\
-/__/ /\ __\    \|__|\|__| \|__|\|_______|\|_______|\|__|\|__|\|_______|
-|__|/ \|__|                                                            
-                                 "
+echo -e "\033[1;36m
+�~V~H�~V~H�~U~W  �~V~H�~V~H�~U~W�~V~H�~V~H�~U~W�~V~H�~V~H�~V~H�~U~W   �~V~H�~V~H�~U~W �~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~W �~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~W  �~V~H�~V~H�~V~H�~V~H�~V~H�~U~W  �~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~W
+�~U~Z�~V~H�~V~H�~U~W�~V~H�~V~H�~U~T�~U~]�~V~H�~V~H�~U~Q�~V~H�~V~H�~V~H�~V~H�~U~W  �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~T�~U~P�~U~P�~U~P�~U~P�~U~] �~V~H�~V~H�~U~T�~U~P�~U~P�~V~H�~V~H�~U~W�~V~H�~V~H�~U~T�~U~P�~U~P�~V~H�~V~H�~U~W�~V~H�~V~H�~U~T�~U~P�~U~P�~U~P�~V~H�~V~H�~U~W
+ �~U~Z�~V~H�~V~H�~V~H�~U~T�~U~] �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~T�~V~H�~V~H�~U~W �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q  �~V~H�~V~H�~V~H�~U~W�~V~H�~V~H�~U~Q  �~V~H�~V~H�~U~Q�~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q   �~V~H�~V~H�~U~Q
+ �~V~H�~V~H�~U~T�~V~H�~V~H�~U~W �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q�~U~Z�~V~H�~V~H�~U~W�~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q   �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q  �~V~H�~V~H�~U~Q�~V~H�~V~H�~U~T�~U~P�~U~P�~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q   �~V~H�~V~H�~U~Q
+�~V~H�~V~H�~U~T�~U~] �~V~H�~V~H�~U~W�~V~H�~V~H�~U~Q�~V~H�~V~H�~U~Q �~U~Z�~V~H�~V~H�~V~H�~V~H�~U~Q�~U~Z�~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~T�~U~]�~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~T�~U~]�~V~H�~V~H�~U~Q  �~V~H�~V~H�~U~Q�~U~Z�~V~H�~V~H�~V~H�~V~H�~V~H�~V~H�~U~T�~U~]
+�~U~Z�~U~P�~U~]  �~U~Z�~U~P�~U~]�~U~Z�~U~P�~U~]�~U~Z�~U~P�~U~]  �~U~Z�~U~P�~U~P�~U~P�~U~] �~U~Z�~U~P�~U~P�~U~P�~U~P�~U~P�~U~] �~U~Z�~U~P�~U~P�~U~P�~U~P�~U~P�~U~] �~U~Z�~U~P�~U~]  �~U~Z�~U~P�~U~] �~U~Z�~U~P�~U~P�~U~P�~U~P�~U~P�~U~]
+\033[0m                                   "
 echo
 echo "$head"
 echo "----------------------------------------------"
